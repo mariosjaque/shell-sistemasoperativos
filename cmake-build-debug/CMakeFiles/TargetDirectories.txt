@@ -1,0 +1,3 @@
+/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug/CMakeFiles/shell_sistemasoperativos.dir
+/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug/CMakeFiles/rebuild_cache.dir
