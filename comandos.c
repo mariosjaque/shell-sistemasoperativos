@@ -12,7 +12,7 @@ void manejar_comando(char **comando) {
     pid_t pid = fork(); // Crea un nuevo proceso bifurcando el proceso actual.
     if (pid == 0) { // Si pid es 0, estamos en el proceso hijo.
         execvp(comando[0], comando); // Reemplaza el proceso hijo con el comando especificado.
-        perror("Error en execvp"); // Si execvp falla, imprime un mensaje de error.
+        fprintf(stderr, "Error: Comando no encontrado: %s\n", comando[0]); // Imprime un mensaje de error si el comando no se encuentra.
         exit(1); // Termina el proceso hijo con un código de error.
     } else { // Si pid no es 0, estamos en el proceso padre.
         int status; // Variable para almacenar el estado del proceso hijo.
