@@ -1,19 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "command_parser.h"
-#include "executor.h"
-#include "error_handler.h"
+#include <string.h>
 #include "shell_utils.h"
-
+#include "Limpiar_stdin.h"
+//#include "command_parser.h"
+//#include "executor.h"
+//#include "error_handler.h"
 int main() {
-    char *input;
-
+    char string[100];
+    
     while(1) {
-        print_prompt();  // Función para mostrar el prompt
+        char *args[10] = {0};
+        scanf("%[^\n]s",string);
+        if(strcmp(string,"exit")==0){
+            break;
+        }
+        Asignar_argumentos(string,args);
+        Ejecucion_comando(args);
+        limpiar_stdin();
+        for(int i = 0;i<10;i++){
+            free(args[i]);
+        }
+        
 
-        input = read_input();  // Leer la entrada del usuario
-
-        if (input == NULL) {
+        /*if (input == NULL) {
             continue;  // Si solo se presionó "enter"
         }
 
@@ -32,7 +42,7 @@ int main() {
             free_command(command);  // Liberar memoria
         }
 
-        free(input);  // Liberar la entrada
+        free(input);  // Liberar la entrada*/
     }
 
     return 0;
