@@ -50,5 +50,10 @@ bool customs(char **comando) {
         }
         return true;
     }
+    /*
+    if (strcmp(comando[0], "favs") == 0) {
+
+    }
+    */
     return false;
 }
