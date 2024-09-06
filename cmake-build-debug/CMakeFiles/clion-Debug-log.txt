@@ -1,4 +1,4 @@
-/opt/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /mnt/c/Users/benja/Desktop/shell-sistemasoperativos -B /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug
+/opt/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S "/mnt/c/Users/benja/Desktop/Shell v2" -B "/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug"
 -- Configuring done (0.0s)
 -- Generating done (0.1s)
--- Build files have been written to: /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug
+-- Build files have been written to: /mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug

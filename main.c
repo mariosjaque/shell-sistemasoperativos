@@ -1,49 +1,34 @@
+// main.c
+
 #include <stdio.h>
+#include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
-#include "shell_utils.h"
-#include "Limpiar_stdin.h"
-//#include "command_parser.h"
-//#include "executor.h"
-//#include "error_handler.h"
-int main() {
-    char string[100];
-    
+#include <signal.h>
+#include "comandos.h"
+#include "signals.h"
+#include "customCom.h"
+
+// Función principal
+void main() {
+    // Configura los manejadores de señales
+    signal(SIGINT, signal_handler);
+    signal(SIGCHLD, signal_handler);
+    signal(SIGTERM, signal_handler);
+
+    // Bucle principal
     while(1) {
-        char *args[10] = {0};
-        scanf("%[^\n]s",string);
-        if(strcmp(string,"exit")==0){
-            break;
+        // Imprime el prompt
+        printf("\033[1;34mNos echamos el proyecto\033[0;32m~$: \033[0m");
+        // Captura la entrada del usuario
+        char **comando = captar_entrada();
+        if (comando == NULL || comando[0] == NULL) {
+            fprintf(stderr, "Error: Se esperaba un comando.\n");
+            continue;
         }
-        Asignar_argumentos(string,args);
-        Ejecucion_comando(args);
-        limpiar_stdin();
-        for(int i = 0;i<10;i++){
-            free(args[i]);
-        }
-        
-
-        /*if (input == NULL) {
-            continue;  // Si solo se presionó "enter"
-        }
-
-        if (strcmp(input, "exit") == 0) {
-            free(input);
-            break;  // Salir de la shell
-        }
-
-        // Parsear la entrada
-        command_t *command = parse_command(input);
-
-        if (command == NULL) {
-            print_error("Comando no válido");
-        } else {
-            execute_command(command);  // Ejecutar el comando
-            free_command(command);  // Liberar memoria
-        }
-
-        free(input);  // Liberar la entrada*/
+        // Maneja comandos personalizados
+        if (customs(comando)) continue;
+        // Maneja otros comandos
+        manejar_comando(comando);
     }
-
-    return 0;
 }

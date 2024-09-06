@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Shell_v2.dir/comandos.c.o CMakeFiles/Shell_v2.dir/signals.c.o CMakeFiles/Shell_v2.dir/customCom.c.o CMakeFiles/Shell_v2.dir/main.c.o -o Shell_v2
