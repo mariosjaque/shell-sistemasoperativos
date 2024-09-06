@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I"/mnt/c/Users/benja/Desktop/Shell v2/."
+C_INCLUDES = -I/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/.
 
 C_FLAGS = -g -std=gnu11 -fdiagnostics-color=always
 

@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/benja/Desktop/Shell v2/comandos.c" "CMakeFiles/Shell_v2.dir/comandos.c.o" "gcc" "CMakeFiles/Shell_v2.dir/comandos.c.o.d"
-  "/mnt/c/Users/benja/Desktop/Shell v2/customCom.c" "CMakeFiles/Shell_v2.dir/customCom.c.o" "gcc" "CMakeFiles/Shell_v2.dir/customCom.c.o.d"
-  "/mnt/c/Users/benja/Desktop/Shell v2/main.c" "CMakeFiles/Shell_v2.dir/main.c.o" "gcc" "CMakeFiles/Shell_v2.dir/main.c.o.d"
-  "/mnt/c/Users/benja/Desktop/Shell v2/signals.c" "CMakeFiles/Shell_v2.dir/signals.c.o" "gcc" "CMakeFiles/Shell_v2.dir/signals.c.o.d"
+  "/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/comandos.c" "CMakeFiles/Shell_v2.dir/comandos.c.o" "gcc" "CMakeFiles/Shell_v2.dir/comandos.c.o.d"
+  "/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/customCom.c" "CMakeFiles/Shell_v2.dir/customCom.c.o" "gcc" "CMakeFiles/Shell_v2.dir/customCom.c.o.d"
+  "/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/main.c" "CMakeFiles/Shell_v2.dir/main.c.o" "gcc" "CMakeFiles/Shell_v2.dir/main.c.o.d"
+  "/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/signals.c" "CMakeFiles/Shell_v2.dir/signals.c.o" "gcc" "CMakeFiles/Shell_v2.dir/signals.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

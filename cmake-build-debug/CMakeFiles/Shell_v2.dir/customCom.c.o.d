@@ -1,5 +1,5 @@
 CMakeFiles/Shell_v2.dir/customCom.c.o: \
- /mnt/c/Users/benja/Desktop/Shell\ v2/customCom.c \
+ /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/customCom.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -80,4 +80,4 @@ CMakeFiles/Shell_v2.dir/customCom.c.o: \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /usr/include/x86_64-linux-gnu/bits/types/idtype_t.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \
- /mnt/c/Users/benja/Desktop/Shell\ v2/customCom.h
+ /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/customCom.h

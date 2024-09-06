@@ -1,6 +1,6 @@
 CMakeFiles/Shell_v2.dir/main.c.o: \
- /mnt/c/Users/benja/Desktop/Shell\ v2/main.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+ /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/main.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -77,7 +77,7 @@ CMakeFiles/Shell_v2.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /mnt/c/Users/benja/Desktop/Shell\ v2/comandos.h \
- /mnt/c/Users/benja/Desktop/Shell\ v2/signals.h \
- /mnt/c/Users/benja/Desktop/Shell\ v2/customCom.h \
+ /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/comandos.h \
+ /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/signals.h \
+ /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/customCom.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h

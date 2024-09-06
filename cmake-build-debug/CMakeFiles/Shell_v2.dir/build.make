@@ -53,10 +53,10 @@ RM = /opt/cmake/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/benja/Desktop/Shell v2"
+CMAKE_SOURCE_DIR = /mnt/c/Users/benja/Desktop/shell-sistemasoperativos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug"
+CMAKE_BINARY_DIR = /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Shell_v2.dir/depend.make
@@ -70,60 +70,60 @@ include CMakeFiles/Shell_v2.dir/progress.make
 include CMakeFiles/Shell_v2.dir/flags.make
 
 CMakeFiles/Shell_v2.dir/comandos.c.o: CMakeFiles/Shell_v2.dir/flags.make
-CMakeFiles/Shell_v2.dir/comandos.c.o: /mnt/c/Users/benja/Desktop/Shell\ v2/comandos.c
+CMakeFiles/Shell_v2.dir/comandos.c.o: /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/comandos.c
 CMakeFiles/Shell_v2.dir/comandos.c.o: CMakeFiles/Shell_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Shell_v2.dir/comandos.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shell_v2.dir/comandos.c.o -MF CMakeFiles/Shell_v2.dir/comandos.c.o.d -o CMakeFiles/Shell_v2.dir/comandos.c.o -c "/mnt/c/Users/benja/Desktop/Shell v2/comandos.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Shell_v2.dir/comandos.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shell_v2.dir/comandos.c.o -MF CMakeFiles/Shell_v2.dir/comandos.c.o.d -o CMakeFiles/Shell_v2.dir/comandos.c.o -c /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/comandos.c
 
 CMakeFiles/Shell_v2.dir/comandos.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Shell_v2.dir/comandos.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/c/Users/benja/Desktop/Shell v2/comandos.c" > CMakeFiles/Shell_v2.dir/comandos.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/comandos.c > CMakeFiles/Shell_v2.dir/comandos.c.i
 
 CMakeFiles/Shell_v2.dir/comandos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Shell_v2.dir/comandos.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/benja/Desktop/Shell v2/comandos.c" -o CMakeFiles/Shell_v2.dir/comandos.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/comandos.c -o CMakeFiles/Shell_v2.dir/comandos.c.s
 
 CMakeFiles/Shell_v2.dir/signals.c.o: CMakeFiles/Shell_v2.dir/flags.make
-CMakeFiles/Shell_v2.dir/signals.c.o: /mnt/c/Users/benja/Desktop/Shell\ v2/signals.c
+CMakeFiles/Shell_v2.dir/signals.c.o: /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/signals.c
 CMakeFiles/Shell_v2.dir/signals.c.o: CMakeFiles/Shell_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Shell_v2.dir/signals.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shell_v2.dir/signals.c.o -MF CMakeFiles/Shell_v2.dir/signals.c.o.d -o CMakeFiles/Shell_v2.dir/signals.c.o -c "/mnt/c/Users/benja/Desktop/Shell v2/signals.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Shell_v2.dir/signals.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shell_v2.dir/signals.c.o -MF CMakeFiles/Shell_v2.dir/signals.c.o.d -o CMakeFiles/Shell_v2.dir/signals.c.o -c /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/signals.c
 
 CMakeFiles/Shell_v2.dir/signals.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Shell_v2.dir/signals.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/c/Users/benja/Desktop/Shell v2/signals.c" > CMakeFiles/Shell_v2.dir/signals.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/signals.c > CMakeFiles/Shell_v2.dir/signals.c.i
 
 CMakeFiles/Shell_v2.dir/signals.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Shell_v2.dir/signals.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/benja/Desktop/Shell v2/signals.c" -o CMakeFiles/Shell_v2.dir/signals.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/signals.c -o CMakeFiles/Shell_v2.dir/signals.c.s
 
 CMakeFiles/Shell_v2.dir/customCom.c.o: CMakeFiles/Shell_v2.dir/flags.make
-CMakeFiles/Shell_v2.dir/customCom.c.o: /mnt/c/Users/benja/Desktop/Shell\ v2/customCom.c
+CMakeFiles/Shell_v2.dir/customCom.c.o: /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/customCom.c
 CMakeFiles/Shell_v2.dir/customCom.c.o: CMakeFiles/Shell_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Shell_v2.dir/customCom.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shell_v2.dir/customCom.c.o -MF CMakeFiles/Shell_v2.dir/customCom.c.o.d -o CMakeFiles/Shell_v2.dir/customCom.c.o -c "/mnt/c/Users/benja/Desktop/Shell v2/customCom.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Shell_v2.dir/customCom.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shell_v2.dir/customCom.c.o -MF CMakeFiles/Shell_v2.dir/customCom.c.o.d -o CMakeFiles/Shell_v2.dir/customCom.c.o -c /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/customCom.c
 
 CMakeFiles/Shell_v2.dir/customCom.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Shell_v2.dir/customCom.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/c/Users/benja/Desktop/Shell v2/customCom.c" > CMakeFiles/Shell_v2.dir/customCom.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/customCom.c > CMakeFiles/Shell_v2.dir/customCom.c.i
 
 CMakeFiles/Shell_v2.dir/customCom.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Shell_v2.dir/customCom.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/benja/Desktop/Shell v2/customCom.c" -o CMakeFiles/Shell_v2.dir/customCom.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/customCom.c -o CMakeFiles/Shell_v2.dir/customCom.c.s
 
 CMakeFiles/Shell_v2.dir/main.c.o: CMakeFiles/Shell_v2.dir/flags.make
-CMakeFiles/Shell_v2.dir/main.c.o: /mnt/c/Users/benja/Desktop/Shell\ v2/main.c
+CMakeFiles/Shell_v2.dir/main.c.o: /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/main.c
 CMakeFiles/Shell_v2.dir/main.c.o: CMakeFiles/Shell_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Shell_v2.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shell_v2.dir/main.c.o -MF CMakeFiles/Shell_v2.dir/main.c.o.d -o CMakeFiles/Shell_v2.dir/main.c.o -c "/mnt/c/Users/benja/Desktop/Shell v2/main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Shell_v2.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Shell_v2.dir/main.c.o -MF CMakeFiles/Shell_v2.dir/main.c.o.d -o CMakeFiles/Shell_v2.dir/main.c.o -c /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/main.c
 
 CMakeFiles/Shell_v2.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Shell_v2.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/c/Users/benja/Desktop/Shell v2/main.c" > CMakeFiles/Shell_v2.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/main.c > CMakeFiles/Shell_v2.dir/main.c.i
 
 CMakeFiles/Shell_v2.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Shell_v2.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/benja/Desktop/Shell v2/main.c" -o CMakeFiles/Shell_v2.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/main.c -o CMakeFiles/Shell_v2.dir/main.c.s
 
 # Object files for target Shell_v2
 Shell_v2_OBJECTS = \
@@ -141,7 +141,7 @@ Shell_v2: CMakeFiles/Shell_v2.dir/customCom.c.o
 Shell_v2: CMakeFiles/Shell_v2.dir/main.c.o
 Shell_v2: CMakeFiles/Shell_v2.dir/build.make
 Shell_v2: CMakeFiles/Shell_v2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Shell_v2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Shell_v2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Shell_v2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/Shell_v2.dir/clean:
 .PHONY : CMakeFiles/Shell_v2.dir/clean
 
 CMakeFiles/Shell_v2.dir/depend:
-	cd "/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/benja/Desktop/Shell v2" "/mnt/c/Users/benja/Desktop/Shell v2" "/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug" "/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug" "/mnt/c/Users/benja/Desktop/Shell v2/cmake-build-debug/CMakeFiles/Shell_v2.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/benja/Desktop/shell-sistemasoperativos /mnt/c/Users/benja/Desktop/shell-sistemasoperativos /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/cmake-build-debug/CMakeFiles/Shell_v2.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Shell_v2.dir/depend
 

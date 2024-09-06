@@ -1,7 +1,8 @@
 CMakeFiles/Shell_v2.dir/comandos.c.o: \
- /mnt/c/Users/benja/Desktop/Shell\ v2/comandos.c \
+ /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/comandos.c \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/benja/Desktop/Shell\ v2/comandos.h /usr/include/stdio.h \
+ /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/comandos.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
