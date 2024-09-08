@@ -12,4 +12,6 @@ add_executable(Shell_v2
         signals.h
         customCom.c
         customCom.h
+        favoritos.h
+        favoritos.c
         main.c)

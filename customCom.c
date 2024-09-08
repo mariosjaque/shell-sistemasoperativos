@@ -7,6 +7,7 @@
 #include <sys/wait.h>
 #include <stdbool.h>
 #include "customCom.h"
+#include "favoritos.h"
 
 // Función para manejar comandos personalizados
 bool customs(char **comando) {
@@ -50,10 +51,29 @@ bool customs(char **comando) {
         }
         return true;
     }
-    /*
-    if (strcmp(comando[0], "favs") == 0) {
 
+    if (strcmp(comando[0], "favs") == 0) {
+        if (strcmp(comando[1], "crear") == 0 && comando[2] != NULL) {
+            crear_favs(comando[2]);
+        } else if (strcmp(comando[1], "mostrar") == 0) {
+            mostrar_favs();
+        } else if (strcmp(comando[1], "eliminar") == 0 && comando[2] != NULL) {
+            eliminar_favs(comando[2]);
+        } else if (strcmp(comando[1], "buscar") == 0 && comando[2] != NULL) {
+            buscar_favs(comando[2]);
+        } else if (strcmp(comando[1], "borrar") == 0) {
+            borrar_favs();
+        } else if (strcmp(comando[1], "guardar") == 0) {
+            guardar_favs();
+        } else if (strcmp(comando[1], "cargar") == 0) {
+            cargar_favs();
+        } else if (comando[1] != NULL && atoi(comando[1]) > 0) {
+            ejecutar_fav(atoi(comando[1]));
+        } else {
+            fprintf(stderr, "Uso incorrecto del comando favs.\n");
+        }
+        return true;
     }
-    */
+
     return false;
 }

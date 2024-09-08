@@ -9,6 +9,14 @@
 
 // Función para manejar comandos
 void manejar_comando(char **comando) {
+    if (strcmp(comando[0], "favs") != 0) { // Excluye los comandos de favoritos
+        char cmd[256] = "";
+        for (int i = 0; comando[i] != NULL; i++) {
+            strcat(cmd, comando[i]);
+            strcat(cmd, " ");
+        }
+        agregar_fav(cmd); // Agrega el comando a favoritos si no está ya en la lista
+    }
     pid_t pid = fork(); // Crea un nuevo proceso bifurcando el proceso actual.
     if (pid == 0) { // Si pid es 0, estamos en el proceso hijo.
         execvp(comando[0], comando); // Reemplaza el proceso hijo con el comando especificado.
@@ -18,6 +26,7 @@ void manejar_comando(char **comando) {
         int status; // Variable para almacenar el estado del proceso hijo.
         wait(&status); // Espera a que el proceso hijo termine y obtiene su estado.
     }
+
 }
 
 // Función para captar la entrada del usuario
