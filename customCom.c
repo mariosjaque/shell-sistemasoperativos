@@ -53,24 +53,53 @@ bool customs(char **comando) {
     }
 
     if (strcmp(comando[0], "favs") == 0) {
-        if (strcmp(comando[1], "crear") == 0 && comando[2] != NULL) {
-            crear_favs(comando[2]);
+        if (comando[1] == NULL) {
+            fprintf(stderr, "Error: Se esperaba un argumento para favs.\n");
+        } else if (strcmp(comando[1], "crear") == 0) {
+            if (comando[2] == NULL) {
+                fprintf(stderr, "Error: Se esperaba una ruta para crear el archivo de favoritos.\n");
+            } else {
+                favs_crear(comando[2]);
+            }
         } else if (strcmp(comando[1], "mostrar") == 0) {
-            mostrar_favs();
-        } else if (strcmp(comando[1], "eliminar") == 0 && comando[2] != NULL) {
-            eliminar_favs(comando[2]);
-        } else if (strcmp(comando[1], "buscar") == 0 && comando[2] != NULL) {
-            buscar_favs(comando[2]);
+            favs_mostrar();
+        } else if (strcmp(comando[1], "eliminar") == 0) {
+            if (comando[2] == NULL) {
+                fprintf(stderr, "Error: Se esperaban números para eliminar comandos.\n");
+            } else {
+                favs_eliminar(comando[2]);
+            }
+        } else if (strcmp(comando[1], "buscar") == 0) {
+            if (comando[2] == NULL) {
+                fprintf(stderr, "Error: Se esperaba un comando para buscar.\n");
+            } else {
+                favs_buscar(comando[2]);
+            }
         } else if (strcmp(comando[1], "borrar") == 0) {
-            borrar_favs();
+            favs_borrar();
+        } else if (strcmp(comando[1], "agregar") == 0) {
+            if (comando[2] == NULL) {
+                fprintf(stderr, "Error: Se esperaba un comando para agregar.\n");
+            } else {
+                favs_agregar(comando[2]);
+            }
+        } else if (strcmp(comando[1], "ejecutar") == 0) {
+            if (comando[2] == NULL) {
+                fprintf(stderr, "Error: Se esperaba un número para ejecutar.\n");
+            } else {
+                int num = atoi(comando[2]);
+                favs_ejecutar(num);
+            }
         } else if (strcmp(comando[1], "guardar") == 0) {
-            guardar_favs();
+            favs_guardar();
         } else if (strcmp(comando[1], "cargar") == 0) {
-            cargar_favs();
-        } else if (comando[1] != NULL && atoi(comando[1]) > 0) {
-            ejecutar_fav(atoi(comando[1]));
+            if (comando[2] == NULL) {
+                fprintf(stderr, "Error: Se esperaba una ruta para cargar el archivo de favoritos.\n");
+            } else {
+                favs_cargar(comando[2]);
+            }
         } else {
-            fprintf(stderr, "Uso incorrecto del comando favs.\n");
+            return false;
         }
         return true;
     }

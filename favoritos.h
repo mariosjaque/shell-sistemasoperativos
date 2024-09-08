@@ -5,14 +5,15 @@
 #ifndef FAVORITOS_H
 #define FAVORITOS_H
 
-void crear_favs(const char *ruta);
-void mostrar_favs();
-void eliminar_favs(const char *nums);
-void buscar_favs(const char *cmd);
-void borrar_favs();
-void ejecutar_fav(int id);
-void cargar_favs();
-void guardar_favs();
-void agregar_fav(const char *cmd);
+#include <stdbool.h>
 
+void favs_crear(const char *ruta);
+void favs_mostrar();
+void favs_eliminar(const char *nums);
+void favs_buscar(const char *cmd);
+void favs_borrar();
+void favs_ejecutar(int num);
+void favs_cargar(const char *ruta);
+void favs_guardar();
+void favs_agregar(const char *comando);
 #endif //FAVORITOS_H
