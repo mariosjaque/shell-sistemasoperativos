@@ -177,6 +177,30 @@ customCom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shell_v2.dir/build.make CMakeFiles/Shell_v2.dir/customCom.c.s
 .PHONY : customCom.c.s
 
+favs.o: favs.c.o
+.PHONY : favs.o
+
+# target to build an object file
+favs.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shell_v2.dir/build.make CMakeFiles/Shell_v2.dir/favs.c.o
+.PHONY : favs.c.o
+
+favs.i: favs.c.i
+.PHONY : favs.i
+
+# target to preprocess a source file
+favs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shell_v2.dir/build.make CMakeFiles/Shell_v2.dir/favs.c.i
+.PHONY : favs.c.i
+
+favs.s: favs.c.s
+.PHONY : favs.s
+
+# target to generate assembly for a file
+favs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shell_v2.dir/build.make CMakeFiles/Shell_v2.dir/favs.c.s
+.PHONY : favs.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -240,6 +264,9 @@ help:
 	@echo "... customCom.o"
 	@echo "... customCom.i"
 	@echo "... customCom.s"
+	@echo "... favs.o"
+	@echo "... favs.i"
+	@echo "... favs.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

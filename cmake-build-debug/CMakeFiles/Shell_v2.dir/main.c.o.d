@@ -80,4 +80,5 @@ CMakeFiles/Shell_v2.dir/main.c.o: \
  /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/comandos.h \
  /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/signals.h \
  /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/customCom.h \
- /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \
+ /mnt/c/Users/benja/Desktop/shell-sistemasoperativos/favs.h

@@ -8,6 +8,7 @@
 #include "comandos.h"
 #include "signals.h"
 #include "customCom.h"
+#include "favs.h"
 
 // Función principal
 void main() {
@@ -15,6 +16,8 @@ void main() {
     signal(SIGINT, signal_handler);
     signal(SIGCHLD, signal_handler);
     signal(SIGTERM, signal_handler);
+
+    favs_init();
 
     // Bucle principal
     while(1) {
@@ -30,5 +33,9 @@ void main() {
         if (customs(comando)) continue;
         // Maneja otros comandos
         manejar_comando(comando);
+        //Agrega el comando a la lista de favoritos
+        if (strcmp(comando[0], "favs") != 0) {
+            favs_add(comando[0]);
+        }
     }
 }
