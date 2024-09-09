@@ -7,6 +7,8 @@
 #include <string.h>
 #include <sys/wait.h>
 
+#include "favoritos.h"
+
 // Función para manejar comandos
 void manejar_comando(char **comando) {
     if (strcmp(comando[0], "favs") != 0) { // Excluye los comandos de favoritos
@@ -15,7 +17,7 @@ void manejar_comando(char **comando) {
             strcat(cmd, comando[i]);
             strcat(cmd, " ");
         }
-        agregar_fav(cmd); // Agrega el comando a favoritos si no está ya en la lista
+        favs_agregar(cmd); // Agrega el comando a favoritos si no está ya en la lista
     }
     pid_t pid = fork(); // Crea un nuevo proceso bifurcando el proceso actual.
     if (pid == 0) { // Si pid es 0, estamos en el proceso hijo.
