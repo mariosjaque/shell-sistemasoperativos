@@ -61,7 +61,7 @@ void manejar_comando(char **comando) {
             }
             // Ejecutar el comando
             execvp(cmd[0], cmd);
-            perror("Error en execvp");
+            perror("Error en execvp: es posible que el comando haya sido inválido o apunte a un archivo inexistente");
             exit(1);
         } else if (pid < 0) {
             perror("Error al crear proceso hijo");
