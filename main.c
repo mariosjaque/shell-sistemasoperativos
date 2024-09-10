@@ -25,10 +25,7 @@ void main() {
         printf("\033[1;34mNos echamos el proyecto\033[0;32m~$: \033[0m");
         // Captura la entrada del usuario
         char **comando = captar_entrada();
-        if (comando == NULL || comando[0] == NULL) {
-            fprintf(stderr, "Error: Se esperaba un comando.\n");
-            continue;
-        }
+        if (comando == NULL || comando[0] == NULL) continue;
         // Maneja comandos personalizados
         if (customs(comando)) continue;
         // Maneja otros comandos
